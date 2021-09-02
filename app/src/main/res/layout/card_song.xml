@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.furkanakdemir.surroundcardview.SurroundCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sampleSurroundCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="32dp"
+    app:cardBackgroundColor="@color/cardview_shadow_end_color"
+
+    app:cardCornerRadius="8dp"
+    app:scv_color="@color/white"
+    app:scv_duration="1000"
+    app:scv_startPoint="bottom_start"
+    app:scv_surrounded="true"
+    app:scv_width="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <com.jackandphantom.paletteshadowview.PaletteShadowView
+            android:id="@+id/imageSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            app:paletteOffsetX="16"
+            app:paletteOffsetY="16"
+            app:paletteRoundRadius="50"
+            app:paletteShadowRadius="16" />
+
+        <TextView
+            android:id="@+id/textGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/autour_one"
+            android:gravity="center"
+            android:text=""
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textSong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/autour_one"
+            android:gravity="center"
+            android:text="song"
+            android:textSize="20dp" />
+
+        <com.bartbergmans.gradientbutton.views.GradientButton
+            android:id="@+id/buttonPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="@font/autour_one"
+            android:text="play"
+            android:textColor="@android:color/white"
+            app:end_color="@color/white"
+            app:filled="true"
+            app:orientation="top_bottom"
+            app:start_color="@color/black"
+            app:stroke="3dp" />
+
+
+
+    </LinearLayout>
+
+</com.furkanakdemir.surroundcardview.SurroundCardView>
